@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2e056d10e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/posts/style4.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12">
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">Travel Kazakhstan</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <a href="#" class="px-2">Sign In</a>
+                        <a href="#" class="px-1">Create an Account</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span ><i class="fas fa-bars"></i></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Main Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index3.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index4.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-search"></i>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <h5 style="color:black">NEW ARRIVALS</h5>
+            <h1 style="color:black"><span>Best Price</span> This Year</h1>
+            <p style="color:black">Shoomatic offers your very comfortable time <br> on walking and exercises.</p>
+            <button>Buy Now</button>
+            {% block content %}
+            {% for post in posts %}
+            <p>{{post.content}}</p>
+            {% endfor %}
+            {% endblock %}
+        </div>
+    </section>
+    <hr class="mx-auto">
+    <h4 style="text-align:center">The tour starts with sightseeing in central part of Almaty. You will know more about history and
+development of the South capital of Kazakhstan and see its major attractions. You will visit a
+popular place for townpeople - the Green Bazaar, where it is impossible to refrain from shopping.
+It is the great chance to experience an atmosphere of the real Central Asian market, its colors,
+smells and crowds. There you can obtain famous Asian sweets, but don't forget to bargain...
+Then the tour will continue in one of the oldest Almaty park – Panfilov Park, where you will see one
+of the unique wooden building in the world – Zenkov Cathedral and also visit the Memorial of Glory
+and Eternal Flame, dedicated to the memory of the fighters who died for freedom and independence of the country.After the park you will
+continue to explore sport, cultural and business areas of the city. You will go to the Medeo Gorge, where the highest mountain skating rink in the
+world is located, as well as the dam, protecting the city from dangerous mudflow. Next destination is the Kok-Tobe hill where the tallest TV tower
+in the world is located (if to count from the sea level) and where you will go by the picturesque winding mountain road. In the national restaurant
+of Kok-Tobe park you will have opportunity to try traditional dishes of Kazakh cuisine sitting inside the real Kazakh yurt. After the lunch you can
+stroll along the winding paths of the Kok-Tobe park, admire the magnificient panorama of the city from the special observation deck and visit the
+shop of national souvenirs. The tour ends with the short ride from the top of the hill to the center of the city by the famous Almaty cableway.</h4>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <style>
+        .full {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 2px;
+            box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+            transition: width 1s;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                'fullWidthImage': false
+            }
+        })
+    </script>
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <p>Our mission is what drives us to do everything possible to expand human potential. We do that by creating groundbreaking sport innovations, by making our products more sustainably where we live and work.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ol class="text-uppercase list-unstyled">
+                    <li><a href="#">kaindy lake</a></li>
+                    <li><a href="#">burabay</a></li>
+                    <li><a href="#">sherkala</a></li>
+                    <li><a href="#">charyn canyon</a></li>
+                </ol>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME, CITY, US</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>+ (777) 792-4848</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>gumarkarim17@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <p>@gumarkarim</p>
+            </div>
+            <div class="copyright mt-5">
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>gumar eCommerce © 2021. All Rights Reserved</p>
+                </div>
+            </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

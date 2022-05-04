@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(nature1.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+html image{
+    height: auto;
+    width: auto;
+}
+.lenta{
+    width: 1400px;
+    height: 75px;
+    margin: auto
+}
+.icon{
+    width: 300px;
+    float: left;
+    height: 70px
+}
+.logo{
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.logo a{
+    color:rgb(255, 145, 1);
+    font-family:Arial;
+    text-decoration: none;
+}
+.logo1{
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    color: white;
+    padding-top: 10px;
+}
+.menu {
+    width: 500px;
+    float: left;
+    height: 70px;
+}
+input[type="date"]{
+    background: transparent;
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.curday {
+    width: 200px;
+    float: left;
+    margin-left: 270px;
+    margin-top: 27px;
+}
+.curday label {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.info h2{
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info h3{
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info p{
+    color: white;
+    font-size: 19px;
+    font-family: Arial;
+}
+ol li{
+    text-decoration: none;
+    color: hsl(0, 0%, 99%);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+.info2 table, th, tr {
+    color: white;
+    font-size: 19px;
+    font-family: Arial;
+    border: wheat;
+}
+.reg {
+    width: 500px;
+    position: absolute;
+    border-radius: 10px;
+    padding: 25px;
+}
+@media screen and (max-width: 700px){
+    .curday {
+        position: absolute;
+        left: 200px;
+        top: 50px;
+        z-index: 2;
+    }
+    .info {
+        position: absolute;
+        width: 300px;
+        left: 300px;
+        top: 100px;
+        z-index: 3;
+    }
+}

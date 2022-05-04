@@ -1,0 +1,38 @@
+{% extends 'posts/commentaries.html' %}
+{% block body %}
+<form class="form-inline"  action="create" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <div style="display:flex;">
+        <label for="username" class="logo" ><h3>Username</h3></label>
+        <input type="text" name="username" class="form-control" style="width:15%; height: 36px; margin-top: 15px; margin-left: 10px" required="required"/>
+        </div>
+        <div style="display:flex;">
+        <label for="commentary" class="logo"><h3>Commentary</h3></label>
+        <input type="text" name="commentary" class="form-control" style="width:15%; height: 36px; margin-top: 15px; margin-left: 10px" required="required"/>
+        <button style="margin-top: 10px; margin-left: 10px" type="submit" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-plus"></span> ADD</button>
+        </div>
+    </div>
+</form>
+<br />
+<table class="table table-bordered">
+    <thead class="alert-warning">
+        <tr>
+            <th>Username</th>
+            <th>Commentary</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.username }}</td>
+            <td>{{ user.commentary }}</td>
+            <td><center><a class="btn btn-sm btn-warning" href="edit/{{ user.id }}"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+            <a class="btn btn-sm btn-danger" href="delete/{{ user.id }}"><span class="glyphicon glyphicon-trash"></span> Delete</a></center></td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tempsoft</title>
+    <link rel="stylesheet" href="static/bonus/ccs1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div class="header">
+         <div class="container">
+                <div class="bar">
+                    <div class="logo">
+                        <img src="static/bonus/logo_bonus.png" width="100px" height="70px">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Account</a></li>
+                        </ul>
+                    </nav>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                    <img class="menu-icon" src="static/bonus/menu.png" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Exclusive Sale <br>For Special Season!<br>Up to 50% OFF</h1>
+                        <p>Today is Electronics day! For this celebration flat 50% OFF!</p>
+                        <p>Hurry up before the stock ends!</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="static/bonus/products.png">
+                    </div>
+                </div>
+         </div>
+    </div>
+
+    <div class="categories">
+        <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                   <img src="">
+                </div>
+               <div class="col-3">
+                   <img src="">
+               </div>
+               <div class="col-3">
+                   <img src="">
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="static/bonus/pc1.jpg">
+                <h4>The best model of PC</h4>
+                <div class="rating_bar">
+                    <span id="rate_1"></span>
+                    <span id="rate_2"></span>
+                    <span id="rate_3"></span>
+                    <span id="rate_4"></span>
+                    <span id="rate_5"></span>
+                </div>
+                <p>249.99$</p>
+            </div>
+
+            <div class="col-4">
+                <img src="static/bonus/laptop1.jpg">
+                <h4>Laptops become more popular</h4>
+                <div class="rating_bar">
+                    <span id="rate1_1"></span>
+                    <span id="rate1_2"></span>
+                    <span id="rate1_3"></span>
+                    <span id="rate1_4"></span>
+                    <span id="rate1_5"></span>
+                </div>
+                <p>74.99$</p>
+            </div>
+            <div class="col-4">
+                <img src="static/bonus/mphone1.jpg">
+                <h4>New model Samsung S22 Ultra</h4>
+                <div class="rating_bar">
+                    <span id="rate2_1"></span>
+                    <span id="rate2_2"></span>
+                    <span id="rate2_3"></span>
+                    <span id="rate2_4"></span>
+                    <span id="rate2_5"></span>
+                </div>
+                <p>49.99$</p>
+            </div>
+            <div class="col-4">
+                <img src="static/bonus/tablet1.jpg">
+                <h4>Ipad prices have dropped!</h4>
+                <div class="rating_bar">
+                    <span id="rate3_1"></span>
+                    <span id="rate3_2"></span>
+                    <span id="rate3_3"></span>
+                    <span id="rate3_4"></span>
+                    <span id="rate3_5"></span>
+                </div>
+                <p>64.99$</p>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="static/bonus/pc2.jpg">
+                <h4>The new model of PC</h4>
+                <div class="rating_bar">
+                    <span id="rate4_1"></span>
+                    <span id="rate4_2"></span>
+                    <span id="rate4_3"></span>
+                    <span id="rate4_4"></span>
+                    <span id="rate4_5"></span>
+                </div>
+                <p>319.99$</p>
+            </div>
+
+            <div class="col-4">
+                <img src="static/bonus/laptop2.jpg">
+                <h4>Powerful laptop</h4>
+                <div class="rating_bar">
+                    <span id="rate5_1"></span>
+                    <span id="rate5_2"></span>
+                    <span id="rate5_3"></span>
+                    <span id="rate5_4"></span>
+                    <span id="rate5_5"></span>
+                </div>
+                <p>99.99$</p>
+            </div>
+            <div class="col-4">
+                <img src="static/bonus/gold_airpods.jpg">
+                <h4>Made by gold: airpods</h4>
+                <div class="rating_bar">
+                    <span id="rate6_1"></span>
+                    <span id="rate6_2"></span>
+                    <span id="rate6_3"></span>
+                    <span id="rate6_4"></span>
+                    <span id="rate6_5"></span>
+                </div>
+                <p>19.99$</p>
+            </div>
+            <div class="col-4">
+                <img src="static/bonus/headphones.jpg">
+                <h4>New Wireless headphones</h4>
+                <div class="rating_bar">
+                    <span id="rate7_1"></span>
+                    <span id="rate7_2"></span>
+                    <span id="rate7_3"></span>
+                    <span id="rate7_4"></span>
+                    <span id="rate7_5"></span>
+                </div>
+                <p>22.99$</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="static/bonus/pc3.jpg">
+                <h4>Released a month ago. New PC</h4>
+                <div class="rating_bar">
+                    <span id="rate8_1"></span>
+                    <span id="rate8_2"></span>
+                    <span id="rate8_3"></span>
+                    <span id="rate8_4"></span>
+                    <span id="rate8_5"></span>
+                </div>
+                <p>349.99$</p>
+            </div>
+
+            <div class="col-4">
+                <img src="static/bonus/laptop3.jpg">
+                <h4>Laptops with 8K quality</h4>
+                <div class="rating_bar">
+                    <span id="rate9_1"></span>
+                    <span id="rate9_2"></span>
+                    <span id="rate9_3"></span>
+                    <span id="rate9_4"></span>
+                    <span id="rate9_5"></span>
+                </div>
+                <p>99.99$</p>
+            </div>
+            <div class="col-4">
+                <img src="static/bonus/smartTV.png">
+                <h4>Smart TV, 8K quality</h4>
+                <div class="rating_bar">
+                    <span id="rate10_1"></span>
+                    <span id="rate10_2"></span>
+                    <span id="rate10_3"></span>
+                    <span id="rate10_4"></span>
+                    <span id="rate10_5"></span>
+                </div>
+                <p>49.99$</p>
+            </div>
+            <div class="col-4">
+                <img src="static/bonus/headset_vr.jpg">
+                <h4>Latest model of HS VR</h4>
+                <div class="rating_bar">
+                    <span id="rate11_1"></span>
+                    <span id="rate11_2"></span>
+                    <span id="rate11_3"></span>
+                    <span id="rate11_4"></span>
+                    <span id="rate11_5"></span>
+                </div>
+                <p>64.99$</p>
+            </div>
+        </div>
+    </div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="static/bonus/mi_band.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>Smart Band</h1>
+                <small>The Mi Smart Band features a 39.9% larger
+                (than Mi Band 3) AMOLED color full-touch display
+                with adjustable brightness, so everything is clear
+                as can be.</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile.</p>
+                <div class="app-logo">
+                    <img src="static/bonus/play_mark.png">
+                    <img src="static/bonus/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="static/bonus/logo_bonus.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and
+                Benefits of Electronics Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Tempsoft</p>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{% block content %}
+    <main>
+        <section>
+            <div class="container">
+                <h1 class="text-center">
+                    Registration Form
+                </h1>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <br />
+                                <p>
+                                    {% if msg %}
+                                        {{ msg | safe }}
+                                    {% else %}
+                                        Add your credentials
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <form method="post" action="">
+
+                                {% csrf_token %}
+                                <div>
+                                    <label for="email">First name</label>
+                                    <div>
+                                        {{ form.firstname }}
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email">Last name</label>
+                                    <div>
+                                        {{ form.lastname }}
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email">Username</label>
+                                    <div>
+                                        {{ form.username }}
+                                    </div>
+                                    <span class="text-error">{{ form.username.errors }}</span>
+                                </div>
+                                <div>
+                                    <label for="email">Age</label>
+                                    <div>
+                                        {{ form.age }}
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email">Your Email</label>
+                                    <div>
+                                        {{ form.email }}
+                                    </div>
+                                    <span class="text-error">{{ form.email.errors }}</span>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="password">Your Password</label>
+                                        <div>
+                                            {{ form.password1 }}
+                                        </div>
+                                        <span class="text-error">{{ form.password1.errors }}</span>
+                                    </div>
+                                    <div>
+                                        <label for="password">Password Confirmation</label>
+                                        <div>
+                                            {{ form.password2 }}
+                                        </div>
+                                        <span class="text-error">{{ form.password2.errors }}</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" name="register">Sign UP</button>
+                                </div>
+                            </form>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock content %}

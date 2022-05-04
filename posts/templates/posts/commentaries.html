@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: ">
+<head>
+    <title>Commentaries</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="static/posts/style2.css"/>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <div style="display: flex;">
+        <h2 class="logo"><a href="nurs.html">Nur-Sultan</a></h2>
+        </div>
+        <hr style="border-top:1px dotted #ccc;"/>
+        <div style="margin-left:20px">
+        {% block body %}
+
+        {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
